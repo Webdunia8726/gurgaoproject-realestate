@@ -82,7 +82,7 @@
       /* Full-width Hero Section */
     .hero {
         position: relative;
-        background-image: url('/bg.jpg'); /* Placeholder background image */
+        background-image: url('../img/bg.jpg'); /* Placeholder background image */
         background-size: cover;
         background-position: center;
         height: 100vh; /* Full viewport height */
@@ -915,7 +915,7 @@ border: 3px solid rgb(207, 200, 200);
 }
 
 .project-container {
-  background-image: url('/home1.webp'); /* Placeholder image, replace with actual image */
+  background-image: url('../img/home1.webp'); /* Placeholder image, replace with actual image */
   background-size: cover;
   background-position: center;
   padding: 80px 0;
