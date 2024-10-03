@@ -3,139 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real Estate Navbar</title>
-  
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+  <title>Project Highlights</title>
   <style>
-    /* Custom CSS */
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
     }
 
-    /* Navbar styling */
-    .navbar {
-      background-color: #34495E; /* Dark Blue */
+    .highlights-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
     }
 
-    .navbar-brand {
-      color: #F39C12; /* Golden for Brand Text */
+    .highlights-title {
+      text-align: center;
+      font-size: 2.5rem;
       font-weight: bold;
-      font-size: 24px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      position: relative;
     }
 
-    .navbar-nav .nav-link {
-      color: white;
-      margin-right: 20px;
-      transition: color 0.3s ease;
+    .highlights-title::after {
+      content: "";
+      width: 80px;
+      height: 4px;
+      background-color: #3498db;
+      display: block;
+      margin: 10px auto 0;
     }
 
-    .navbar-nav .nav-link:hover {
-      color: #F39C12; /* Golden color for hover */
+    .highlight-list {
+      list-style-type: none;
+      padding: 0;
+      font-size: 1.2rem;
     }
 
-    .navbar-toggler {
-      border-color: #F39C12;
+    .highlight-item {
+      padding: 15px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      font-weight: 500;
+      color: #34495e;
     }
 
-    /* Remove the default Bootstrap hamburger icon */
-    .navbar-toggler-icon {
-      display: none;
+    .highlight-item:last-child {
+      border-bottom: none;
     }
 
-    /* Call-to-action button */
-    .cta-btn {
-      background-color: #F39C12;
-      color: white;
-      border-radius: 20px;
-      padding: 10px 20px;
-      transition: background-color 0.3s ease;
+    .highlight-item span {
+      margin-right: 10px;
     }
 
-    .cta-btn:hover {
-      background-color: #e67e22; /* Darker Orange for hover */
-      color: white;
+    .icon {
+      margin-right: 10px;
+      font-size: 1.4rem;
+      color: #27ae60;
     }
 
-    /* Responsive adjustments */
+    /* Responsive Design */
     @media (max-width: 768px) {
-      .navbar-nav {
-        text-align: center;
+      .highlights-title {
+        font-size: 2rem;
       }
 
-      .navbar-nav .nav-link {
-        margin-right: 0;
-        margin-bottom: 10px;
-      }
-
-      .cta-btn {
-        width: 100%;
-        text-align: center;
+      .highlight-item {
+        font-size: 1rem;
       }
     }
+
   </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <!-- Brand/Logo -->
-      <a class="navbar-brand" href="#">Shail Infra Build</a>
+  <section class="highlights-section">
+    <h2 class="highlights-title">Project Highlights</h2>
+    <ul class="highlight-list">
+      <li class="highlight-item">
+        <span class="icon">🏢</span> Two Units Per Floor
+      </li>
+      <li class="highlight-item">
+        <span class="icon">🌳</span> Forest theme based project
+      </li>
+      <li class="highlight-item">
+        <span class="icon">⛳</span> All units overlook 270-acre Lush Green Golf Course & Internal park view
+      </li>
+      <li class="highlight-item">
+        <span class="icon">🏘️</span> Lowest Density project in the vicinity
+      </li>
+      <li class="highlight-item">
+        <span class="icon">🌿</span> 4.5 Acres of central green area
+      </li>
+      <li class="highlight-item">
+        <span class="icon">📏</span> 11 feet + clear height
+      </li>
+      <li class="highlight-item">
+        <span class="icon">🚗</span> No vehicle movement on surface
+      </li>
+      <li class="highlight-item">
+        <span class="icon">🏞️</span> Huge central green space
+      </li>
+      <li class="highlight-item">
+        <span class="icon">🏛️</span> Massive state-of-the-art Clubhouse - 55,000 sq ft approx.
+      </li>
+      <li class="highlight-item">
+        <span class="icon">🏊</span> Half Olympic size swimming pool, outdoor deck space, multiple water bodies, badminton court, squash court, lawn tennis, basketball court
+      </li>
+      <li class="highlight-item">
+        <span class="icon">❄️</span> VRV Air conditioning
+      </li>
+      <li class="highlight-item">
+        <span class="icon">🍳</span> Modular Kitchen
+      </li>
+    </ul>
+  </section>
 
-      <!-- Toggler for mobile view -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- Using FontAwesome icon for hamburger -->
-        <span><i class="fas fa-bars"></i></span>
-      </button>
-
-      <!-- Navbar Links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <!-- Dropdown for Categories -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Properties
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Apartments</a>
-              <a class="dropdown-item" href="#">Plots</a>
-              <a class="dropdown-item" href="#">Farmhouses</a>
-              <a class="dropdown-item" href="#">Raw Houses</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-
-        <!-- Call-to-Action Button -->
-        <a href="#" class="btn cta-btn ml-lg-3">Enquire Now</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Main content placeholder below navbar -->
-  <div class="main-content" style="margin-top: 80px;">
-    <div class="container">
-      <h1>Welcome to Shail Infra Build</h1>
-      <p>Your trusted partner for finding your dream property.</p>
-    </div>
-  </div>
-
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
